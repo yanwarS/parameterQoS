@@ -1,0 +1,2 @@
+# parameterQoS
+penghitung parameter QoS
