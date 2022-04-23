@@ -23,16 +23,16 @@ function delay(){
     var hasil=totalDelay/paketDiterima;
     document.getElementById("hasilDelay").value=hasil;
     if (hasil < 150){
-        document.getElementById("indeksDelay").value=4;
+        document.getElementById("indeksPacketLoss").value=4;
     }
     else if (hasil < 300){
-        document.getElementById("indeksDelay").value=3;
+        document.getElementById("indeksPacketLoss").value=3;
     }
     else if (hasil < 450){
-        document.getElementById("indeksDelay").value=2;
+        document.getElementById("indeksPacketLoss").value=2;
     }
     else if (hasil >= 450){
-        document.getElementById("indeksDelay").value=1;
+        document.getElementById("indeksPacketLoss").value=1;
     }
 }
 function packetLoss(){
