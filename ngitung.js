@@ -38,7 +38,7 @@ function delay(){
 function packetLoss(){
     var paketDikirim=parseFloat(document.getElementById("paketDikirim").value);
     var paketDiterima=parseFloat(document.getElementById("paketTerima").value);
-    var paketHilang=paketDikirim/paketDiterima;
+    var paketHilang=paketDikirim-paketDiterima;
     var hasil=(paketHilang/paketDikirim)*(100);
     document.getElementById("hasilPacketLoss").value=hasil;
     if (hasil =0 ){
