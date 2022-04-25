@@ -40,7 +40,7 @@ function packetLoss(){
     var paketHilang=paketDikirim/paketDiterima;
     var hasil=(paketHilang/paketDikirim)*(100);
     document.getElementById("hasilPacketLoss").value=parseInt(hasil);
-    if (parseInt(hasil) = 0 ){
+    if (parseInt(hasil) == 0 ){
         document.getElementById("indeksPacketLoss").value=4;
     }
     else if (parseInt(hasil) < 3){
@@ -58,7 +58,7 @@ function jitter(){
     var paketDiterima=parseFloat(document.getElementById("terimaPaket").value);
     hasil=totalVariasi/(paketDiterima-1);
     document.getElementById("hasilJitter").value=hasil;
-    if (parseInt(hasil) = 0){
+    if (parseInt(hasil) == 0){
         document.getElementById("indeksJitter").value=4;
     }
     else if (parseInt(hasil) < 75){
