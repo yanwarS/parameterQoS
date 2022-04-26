@@ -39,7 +39,8 @@ function packetLoss(){
     var paketDikirim=parseFloat(document.getElementById("paketDikirim").value);
     var paketDiterima=parseFloat(document.getElementById("paketTerima").value);
     var paketHilang=paketDikirim-paketDiterima;
-    var hasil=(paketHilang/paketDikirim*(100);
+    var hslPL=paketHilang/paketDikirim;
+    var hasil=hslPL*100;
     document.getElementById("hasilPacketLoss").value=parseInt(hasil);
     if (parseInt(hasil) == 0 ){
         document.getElementById("indeksPacketLoss").value=4;
