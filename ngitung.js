@@ -19,7 +19,7 @@ function throughput(){
 function delay(){
     var totalDelay=parseFloat(document.getElementById("totalDelay").value);
     var paketDiterima=parseFloat(document.getElementById("paketDiterima").value);
-    var hasil=totalDelay/paketDiterima;
+    var hasil=(totalDelay/paketDiterima)*1000;
     document.getElementById("hasilDelay").value=hasil;
     if (parseInt(hasil) < 150){
         document.getElementById("indeksDelay").value=4;
