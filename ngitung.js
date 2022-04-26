@@ -58,7 +58,9 @@ function packetLoss(){
 function jitter(){
     var totalVariasi=parseFloat(document.getElementById("variasiDelay").value);
     var paketDiterima=parseFloat(document.getElementById("terimaPaket").value);
-    hasil=totalVariasi/(paketDiterima-1);
+    var hslJitter=totalVariasi/(paketDiterima-1);
+    var hasil=hslJitter*1000;
+    
     document.getElementById("hasilJitter").value=hasil;
     if (parseInt(hasil) == 0){
         document.getElementById("indeksJitter").value=4;
